@@ -1,13 +1,19 @@
 import pymqi
 
-queue_manager = "QM1"
+queue_manager = "OPSJXCTIQMST"
 channel = ""
-host = "10.20.99.120"
-port = "1414"
-queue_name = "LQ1"
-message = "Hello from Python2!"
-my_str_as_bytes = str.encode(message)
+host = "10.20.20.23"
+port = "1603"
+queue_name = "CSC.OPS.INF.LEGO.TEST"
 
+#
+# queue_manager = "QM1"
+# channel = ""
+# host = "10.20.20.23"
+# port = "1414"
+# queue_name = "TEST.IAS.LQ1"
+message = "Hello from Python!"
+my_str_as_bytes = str.encode(message)
 
 conn_info = "%s(%s)".format(host, port)
 
